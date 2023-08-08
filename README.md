@@ -1,4 +1,4 @@
-### shiliang26.github.io
+# shiliang26.github.io
 
 This is the source code for my personal webpage.
 
