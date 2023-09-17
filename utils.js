@@ -15,11 +15,13 @@ function createProjectElement(id, project){
 
     html_img = `<img src='${project.image}' style="max-width: 200px"></div></div>`
     html_txt = `<p>
-      <a href="${project.paper_url}"><papertitle>${project.title}</papertitle></a>
+      <papertitle>${project.title}</papertitle>
       <br>
       ${project.authors}
       <br>
       <em>${project.conference}</em>
+      <br>
+      [<a href="${project.paper_url}">Paper</a>][<a href="${project.code_url}">Code</a>]
       <br>
       <br>
 

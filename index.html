@@ -161,6 +161,7 @@
               id = "rffr", {
               title: "Real Face Foundation Representation Learning for Generalized Deepfake Detection",
               paper_url: "https://arxiv.org/abs/2303.08439",
+              code_url: "https://github.com/shiliang26/RFFR",
               authors: "<b> Liang Shi </b>, Jie Zhang, Shiguang Shan",
               conference: "In submission.",
               image: "figures/rffr-img.png",
@@ -177,6 +178,7 @@
               id = "fg2021", {
               title: "Unknown Aware Feature Learning for Face Forgery Detection",
               paper_url: "https://ieeexplore.ieee.org/abstract/document/9666951/",
+              code_url: "https://github.com/shiliang26/UnknownAware",
               authors: "<b> Liang Shi </b>, Jie Zhang, Chenyue Liang, Shiguang Shan",
               conference: "FG 2021",
               image: "figures/fg2021-img.png",
@@ -209,7 +211,7 @@
               authors: 'Advised by: Prof. Jie Zhang, Prof. Shiguang Shan.',
               time: "March 2023 ~ Now",
               image: 'figures/deepfake.png',
-              others: "We collect over 50 different types of deepfakes to train a unified model for general-purpose in-the-wild deepfake detection (ignoring standard academic practice of training with one dataset). In addition, we explore self-supervised pre-training that benefits deepfake detection as a downstream task."
+              others: "We collect over 50 different types of deepfakes to train a unified model for general-purpose in-the-wild deepfake detection. This includes traditional GAN-based deepfakes as well as diffusion-based high-quality deepfakes. We also explore self-supervised pre-training that benefits deepfake detection as a downstream task."
             });
           </script>
 
@@ -229,6 +231,24 @@
               others: "Subject-driven diffusion model adaptation, like Dreambooth, has made malicious face manipulations more straightforward than ever before. To counteract this, we modify text-to-image models to reduce their capacity to generate precise facial identities, thereby hindering user-friendly face manipulations. "
             });
           </script>
+
+          <!--
+          <tr>
+            <td width="25%" id="id-specific-img"></td>
+            <td valign="top" width="75%" id="id-specific-txt"></td>
+          </tr>
+          <script type="text/javascript">
+            createSimpleElement(
+              id = "id-specific", {
+              title: "Identity-Specific Deepfake Detection",
+              paper_url: null,
+              authors: 'Advised by: Prof. Jie Zhang',
+              time: "Aug 2023 ~ Now",
+              image: 'figures/adapter.png',
+              others: "We explore the integration of small adapter modules with a general deepfake detection model, enabling the detection of deepfakes specific to individual identities while maintaining overall model efficiency."
+            });
+          </script>
+        -->
 
           <tr>
             <td width="25%" id="poisson-img"></td>
