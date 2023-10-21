@@ -199,22 +199,6 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           
-          <tr>
-            <td width="25%" id="deepfake-img"></td>
-            <td valign="top" width="75%" id="deepfake-txt"></td>
-          </tr>
-          <script type="text/javascript">
-            createSimpleElement(
-              id = "deepfake", {
-              title: "Large Deepfake Detection Model: In Progress",
-              paper_url: null,
-              authors: 'Advised by: Prof. Jie Zhang, Prof. Shiguang Shan.',
-              time: "March 2023 ~ Now",
-              image: 'figures/deepfake.png',
-              others: "We collect over 50 different types of deepfakes to train a unified model for general-purpose in-the-wild deepfake detection. This includes traditional GAN-based deepfakes as well as diffusion-based high-quality deepfakes. We also explore self-supervised pre-training that benefits deepfake detection as a downstream task."
-            });
-          </script>
-
 
           <tr>
             <td width="25%" id="faceblind-img"></td>
@@ -223,7 +207,7 @@
           <script type="text/javascript">
             createSimpleElement(
               id = "faceblind", {
-              title: "A Face-blind Text-to-image Diffusion Model: In Progress",
+              title: "A Face-blind Text-to-image Diffusion Model: Text-to-Image diffusion model alignment against Fake Face Generation (In Progress)",
               paper_url: null,
               authors: 'Advised by: Prof. Jie Zhang',
               time: "July 2023 ~ Now",
@@ -232,7 +216,6 @@
             });
           </script>
 
-          <!--
           <tr>
             <td width="25%" id="id-specific-img"></td>
             <td valign="top" width="75%" id="id-specific-txt"></td>
@@ -240,15 +223,31 @@
           <script type="text/javascript">
             createSimpleElement(
               id = "id-specific", {
-              title: "Identity-Specific Deepfake Detection",
+              title: "One-Shot Identity-Specific Deepfake Detection",
               paper_url: null,
-              authors: 'Advised by: Prof. Jie Zhang',
+              authors: 'Advised by: Prof. Jie Zhang, in collaboration with Yuheng Zhang',
               time: "Aug 2023 ~ Now",
-              image: 'figures/adapter.png',
-              others: "We explore the integration of small adapter modules with a general deepfake detection model, enabling the detection of deepfakes specific to individual identities while maintaining overall model efficiency."
+              image: 'figures/lora.png',
+              others: "We explore fast development of small adapter modules for general deepfake detection model, enabling the detection of deepfakes specific to individual identities."
             });
           </script>
-        -->
+
+
+          <tr>
+            <td width="25%" id="deepfake-img"></td>
+            <td valign="top" width="75%" id="deepfake-txt"></td>
+          </tr>
+          <script type="text/javascript">
+            createSimpleElement(
+              id = "deepfake", {
+              title: "Large Deepfake Detection Model (In Progress)",
+              paper_url: null,
+              authors: 'Advised by: Prof. Jie Zhang, Prof. Shiguang Shan, incollaboration with Dr. Zonghui Guo.',
+              time: "March 2023 ~ Now",
+              image: 'figures/deepfake.png',
+              others: "We collect over 50 different types of deepfakes to train a unified model for general-purpose in-the-wild deepfake detection. For the upstream, we explore self-supervised pre-training that benefits deepfake detection. For the downstream, we study how to adapt the trained model for method-specific and ID-specific detection tasks."
+            });
+          </script>
 
           <tr>
             <td width="25%" id="poisson-img"></td>
