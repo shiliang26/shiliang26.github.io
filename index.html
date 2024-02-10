@@ -163,7 +163,7 @@
               paper_url: "https://arxiv.org/abs/2303.08439",
               code_url: "https://github.com/shiliang26/RFFR",
               authors: "<b> Liang Shi </b>, Jie Zhang, Shiguang Shan",
-              conference: "In submission.",
+              conference: "In submission to Pattern Recognition (major revision submitted).",
               image: "figures/rffr-img.png",
               others: "We leverage large unlabeled datasets to learn a real face distribution, in hope to identify deepfake images of various forms outside of this distribution. "
             });
@@ -205,14 +205,15 @@
             <td valign="top" width="75%" id="faceblind-txt"></td>
           </tr>
           <script type="text/javascript">
-            createSimpleElement(
+            createProjectElement(
               id = "faceblind", {
-              title: "A Face-blind Text-to-image Diffusion Model: Text-to-Image diffusion model alignment against Fake Face Generation (In Progress)",
+              title: "A Face-blind Text-to-image Diffusion Model: Text-to-Image diffusion model alignment against Fake Face Generation",
               paper_url: null,
               authors: 'Advised by: Prof. Jie Zhang',
               time: "July 2023 ~ Now",
               image: 'figures/blind.png',
-              others: "Subject-driven diffusion model adaptation, like Dreambooth, has made malicious face manipulations more straightforward than ever before. To counteract this, we modify text-to-image models to reduce their capacity to generate precise facial identities, thereby hindering user-friendly face manipulations. "
+              conference: 'In preparation for submission to ECCV 2024. ',
+              others: "Text-driven latent diffusion models have made malicious face manipulations more straightforward than ever before. To counteract this, we modify text-to-image models to reduce their capacity to generate precise facial identities, thereby hindering user-friendly face manipulations. We explore parameter-efficient fine-tuning (PEFT) for cross-model generality. "
             });
           </script>
 
@@ -221,13 +222,14 @@
             <td valign="top" width="75%" id="id-specific-txt"></td>
           </tr>
           <script type="text/javascript">
-            createSimpleElement(
+            createProjectElement(
               id = "id-specific", {
               title: "One-Shot Identity-Specific Deepfake Detection",
               paper_url: null,
               authors: 'Advised by: Prof. Jie Zhang, in collaboration with Yuheng Zhang',
               time: "Aug 2023 ~ Now",
               image: 'figures/lora.png',
+              conference: 'In preparation for submission to ECCV 2024. ',
               others: "We explore fast development of small adapter modules for general deepfake detection model, enabling the detection of deepfakes specific to individual identities."
             });
           </script>
