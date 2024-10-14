@@ -2,4 +2,4 @@
 
 This is the source code for my personal webpage.
 
-Updated: Sep 2023
+Updated: Oct 2024
