@@ -102,19 +102,19 @@
                 <name>Liang Shi</name>
               </p>
               <p>
-                I am a master's student at <a href="http://vipl.ict.ac.cn/en/index.html"> Visual Information Processing and Learning (VIPL) </a> group, a vibrant research collective based at Institute of Computing Technology, Chinese Academy of Sciences. I have the privilege of being advised by Prof. <a href="https://jiezhang010.github.io/">Jie Zhang</a>. I also maintain close collaborations with Prof. <a href="http://vipl.ict.ac.cn/people/_sgshan/">Shiguang Shan </a> and Dr. <a href="http://vipl.ict.ac.cn/people/_zhguo/"> Zonghui Guo</a>. Prior to my master's program, I received my bachelor degree in Computer Science from University of Chinese Academy of Sciences in 2021. 
+                I am a first-year PhD student at <a href="https://www.northeastern.edu/">Northeastern University</a>, advised by <a href="https://www1.ece.neu.edu/~yunfu/">Prof. Yun Raymond Fu</a>.
                 <br>
                 <br>
-                My research interests lie in the field of computer vision. During my master's study, I am primarily focused on image forensics, which also sparked my interests in visual foundation models, generative modeling and trustworthy machine learning. 
+                Previously, I was a master's student at <a href="http://vipl.ict.ac.cn/en/index.html"> Visual Information Processing and Learning (VIPL) </a> group, a vibrant research collective based at Institute of Computing Technology, Chinese Academy of Sciences, where I worked with Prof. <a href="https://vipl.ict.ac.cn/people/_jzhang/">Jie Zhang</a> and Prof. <a href="http://vipl.ict.ac.cn/people/_sgshan/">Shiguang Shan</a>. I received my bachelor's degree in Computer Science from University of Chinese Academy of Sciences. 
                 <br>
                 <br>
-                I am actively looking for PhD positions starting in Fall 2024. 
+                My research interests lie in the field of computer vision. I am primarily focused on face generation, understanding, and forensics, with a growing interest in vision-language models and generative models. 
+
               </p>
               <p align=center>
                 <a href="https://github.com/shiliang26"> GitHub </a> &nbsp/&nbsp
                 <a href="https://www.linkedin.com/in/liang-shi-9a1b23219//"> LinkedIn </a> &nbsp/&nbsp
-                <a href="mailto: liang.shi@vipl.ict.ac.cn"> Email </a> &nbsp/&nbsp
-                <a href="CV_Liang_Shi.pdf"> CV </a>
+                <a href="mailto: liang.shi@vipl.ict.ac.cn"> Email </a> 
               </p>
             </td>
             <td width="33%">
@@ -143,7 +143,7 @@
             <td width="100%" valign="middle">
               <heading> Research </heading>
               <p>
-        		A key goal of my research during my master's studies is to improve the generalization of deepfake detection. In specific, we develop models that generalize to different types of face manipulations, even when they are trained on a limited spectrum of deepfakes. This has resulted in the following research papers. 
+        		
           </tr>
         
 		</table>
@@ -151,6 +151,24 @@
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
           <!-- Projects -->
+
+          <tr>
+            <td width="25%" id="apl-img"></td>
+            <td valign="top" width="75%" id="apl-txt"></td>
+          </tr>
+          <script type="text/javascript">
+            createProjectElement(
+              id = "apl", {
+              title: "Anonymization Prompt Learning for Facial Privacy-Preserving Text-to-Image Generation",
+              paper_url: "https://arxiv.org/abs/2405.16895",
+              code_url: "https://github.com/shiliang26/APL",
+              authors: "<b> Liang Shi </b>, Jie Zhang, Shiguang Shan",
+              conference: "In submission to IJCV.",
+              image: "figures/apl.png",
+              others: "We prevent text-to-image models from generating accurate facial identities by inserting a plug-and-play Anonymization Prompt. This prompt anonymizes any identities, and can be successfully transferred to other diffusion models."
+            });
+          </script>
+
 
           <tr>
             <td width="25%" id="rffr-img"></td>
@@ -163,11 +181,27 @@
               paper_url: "https://arxiv.org/abs/2303.08439",
               code_url: "https://github.com/shiliang26/RFFR",
               authors: "<b> Liang Shi </b>, Jie Zhang, Shiguang Shan",
-              conference: "In submission to Pattern Recognition (major revision submitted).",
+              conference: "In submission to Pattern Recognition (minor revision submitted).",
               image: "figures/rffr-img.png",
               others: "We leverage large unlabeled datasets to learn a real face distribution, in hope to identify deepfake images of various forms outside of this distribution. "
             });
           </script>
+
+          <tr>
+            <td width="25%" id="id-specific-img"></td>
+            <td valign="top" width="75%" id="id-specific-txt"></td>
+          </tr>
+          <script type="text/javascript">
+          createSimpleElement(
+            id = "id-specific", {
+            title: "Hyper-IDD: One-Shot Adaptation for Identity-Specific Deepfake Detection",
+            authors: 'Jie Zhang, Yuheng Zhang, <b> Liang Shi </b>, Shiguang Shan',
+            image: 'figures/hyperidd.png',
+            time: 'In submission. ',
+            others: "We explore fast development of small adapter modules for general deepfake detection model, enabling the detection of deepfakes specific to individual identities."
+          });
+          </script>
+
 
           <tr>
             <td width="25%" id="fg2021-img"></td>
@@ -200,40 +234,8 @@
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           
 
-          <tr>
-            <td width="25%" id="faceblind-img"></td>
-            <td valign="top" width="75%" id="faceblind-txt"></td>
-          </tr>
-          <script type="text/javascript">
-            createProjectElement(
-              id = "faceblind", {
-              title: "A Face-blind Text-to-image Diffusion Model: Text-to-Image diffusion model alignment against Fake Face Generation",
-              paper_url: null,
-              authors: 'Advised by: Prof. Jie Zhang',
-              time: "July 2023 ~ Now",
-              image: 'figures/blind.png',
-              conference: 'In preparation for submission to ECCV 2024. ',
-              others: "Text-driven latent diffusion models have made malicious face manipulations more straightforward than ever before. To counteract this, we modify text-to-image models to reduce their capacity to generate precise facial identities, thereby hindering user-friendly face manipulations. We explore parameter-efficient fine-tuning (PEFT) for cross-model generality. "
-            });
-          </script>
 
-          <tr>
-            <td width="25%" id="id-specific-img"></td>
-            <td valign="top" width="75%" id="id-specific-txt"></td>
-          </tr>
-          <script type="text/javascript">
-            createProjectElement(
-              id = "id-specific", {
-              title: "One-Shot Identity-Specific Deepfake Detection",
-              paper_url: null,
-              authors: 'Advised by: Prof. Jie Zhang, in collaboration with Yuheng Zhang',
-              time: "Aug 2023 ~ Now",
-              image: 'figures/lora.png',
-              conference: 'In preparation for submission to ECCV 2024. ',
-              others: "We explore fast development of small adapter modules for general deepfake detection model, enabling the detection of deepfakes specific to individual identities."
-            });
-          </script>
-
+          
 
           <tr>
             <td width="25%" id="deepfake-img"></td>
@@ -242,12 +244,12 @@
           <script type="text/javascript">
             createSimpleElement(
               id = "deepfake", {
-              title: "Large Deepfake Detection Model (In Progress)",
+              title: "Large Deepfake Detection Model",
               paper_url: null,
-              authors: 'Advised by: Prof. Jie Zhang, Prof. Shiguang Shan, incollaboration with Dr. Zonghui Guo.',
+              authors: 'Advised by: Prof. Jie Zhang, Prof. Shiguang Shan, incollaboration with Dr. Zonghui Guo, Yingjie Liu, and Zhenwei Du.',
               time: "March 2023 ~ Now",
               image: 'figures/deepfake.png',
-              others: "We collect over 50 different types of deepfakes to train a unified model for general-purpose in-the-wild deepfake detection. For the upstream, we explore self-supervised pre-training that benefits deepfake detection. For the downstream, we study how to adapt the trained model for method-specific and ID-specific detection tasks."
+              others: "We collect over 60 different types of deepfakes to train a unified model for general-purpose in-the-wild deepfake detection. For the upstream, we explore self-supervised pre-training that benefits deepfake detection. For the downstream, we study how to adapt the trained model for method-specific and ID-specific detection tasks."
             });
           </script>
 
