@@ -102,13 +102,17 @@
                 <name>Liang Shi</name>
               </p>
               <p>
-                I am a first-year PhD student at <a href="https://www.northeastern.edu/">Northeastern University</a>, advised by <a href="https://www1.ece.neu.edu/~yunfu/">Prof. Yun Raymond Fu</a>.
+                I am a first-year PhD student at <a href="https://www.northeastern.edu/">Northeastern University</a> advised by <a href="https://www1.ece.neu.edu/~yunfu/">Prof. Yun Raymond Fu</a>.
                 <br>
                 <br>
                 Previously, I was a master's student at <a href="http://vipl.ict.ac.cn/en/index.html"> Visual Information Processing and Learning (VIPL) </a> group, a vibrant research collective based at Institute of Computing Technology, Chinese Academy of Sciences, where I worked with Prof. <a href="https://vipl.ict.ac.cn/people/_jzhang/">Jie Zhang</a> and Prof. <a href="http://vipl.ict.ac.cn/people/_sgshan/">Shiguang Shan</a>. I received my bachelor's degree in Computer Science from University of Chinese Academy of Sciences. 
                 <br>
                 <br>
-                My research interests lie in the field of computer vision. I am primarily focused on face generation, understanding, and forensics, with a growing interest in vision-language models and generative models. 
+                My research interests lie in the field of computer vision. I am primarily focused on face generation, understanding, and forensics. I have a growing interest in vision-language models and generative models, especially their intersection with face-related research.
+                <br>
+                <br>
+                I am actively looking for internship opportunities for the summer of 2025.
+
 
               </p>
               <p align=center>
@@ -165,7 +169,7 @@
               authors: "<b> Liang Shi </b>, Jie Zhang, Shiguang Shan",
               conference: "In submission to IJCV.",
               image: "figures/apl.png",
-              others: "We prevent text-to-image models from generating accurate facial identities by inserting a plug-and-play Anonymization Prompt. This prompt anonymizes any identities, and can be successfully transferred to other diffusion models."
+              others: "We prevent text-to-image models from generating accurate facial identities by inserting a plug-and-play Anonymization Prompt. This prompt anonymizes any identities and can be successfully applied to other diffusion models."
             });
           </script>
 
@@ -181,25 +185,10 @@
               paper_url: "https://arxiv.org/abs/2303.08439",
               code_url: "https://github.com/shiliang26/RFFR",
               authors: "<b> Liang Shi </b>, Jie Zhang, Shiguang Shan",
-              conference: "In submission to Pattern Recognition (minor revision submitted).",
+              conference: "Pattern Recognition",
               image: "figures/rffr-img.png",
-              others: "We leverage large unlabeled datasets to learn a real face distribution, in hope to identify deepfake images of various forms outside of this distribution. "
+              others: "We leverage large unlabeled datasets to learn a real face distribution, in hope to identify deepfake images of various forms outside of this distribution. Our method is scalable with the size of real face datasets."
             });
-          </script>
-
-          <tr>
-            <td width="25%" id="id-specific-img"></td>
-            <td valign="top" width="75%" id="id-specific-txt"></td>
-          </tr>
-          <script type="text/javascript">
-          createSimpleElement(
-            id = "id-specific", {
-            title: "Hyper-IDD: One-Shot Adaptation for Identity-Specific Deepfake Detection",
-            authors: 'Jie Zhang, Yuheng Zhang, <b> Liang Shi </b>, Shiguang Shan',
-            image: 'figures/hyperidd.png',
-            time: 'In submission. ',
-            others: "We explore fast development of small adapter modules for general deepfake detection model, enabling the detection of deepfakes specific to individual identities."
-          });
           </script>
 
 
@@ -214,11 +203,26 @@
               paper_url: "https://ieeexplore.ieee.org/abstract/document/9666951/",
               code_url: "https://github.com/shiliang26/UnknownAware",
               authors: "<b> Liang Shi </b>, Jie Zhang, Chenyue Liang, Shiguang Shan",
-              conference: "FG 2021",
+              conference: "IEEE FG 2021",
               image: "figures/fg2021-img.png",
               others: "We improve generalization of models by encouraging it to learn from non-salient areas with subtle artifacts."
             });
           </script>
+
+        <tr>
+          <td width="25%" id="id-specific-img"></td>
+          <td valign="top" width="75%" id="id-specific-txt"></td>
+        </tr>
+        <script type="text/javascript">
+        createSimpleElement(
+          id = "id-specific", {
+          title: "Hyper-IDD: One-Shot Adaptation for Identity-Specific Deepfake Detection",
+          authors: 'Jie Zhang, Yuheng Zhang, Fengming Gu, <b> Liang Shi </b>, Zonghui Guo, Shiguang Shan, Xilin Chen',
+          image: 'figures/hyperidd.png',
+          time: 'In submission. ',
+          others: "We explore fast development of small adapter modules for general deepfake detection model, enabling the detection of deepfakes specific to individual identities."
+        });
+        </script>
           
           <!-- Awards -->
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
@@ -226,7 +230,7 @@
             <td width="100%" valign="middle">
               <heading>Projects</heading>
               <p>
-        		I list a few ongoing projects as well as finished projects that might be of interest.
+        		I list some projects I worked on that might be of interest.
             </td>
           </tr>
         </table>
@@ -247,7 +251,7 @@
               title: "Large Deepfake Detection Model",
               paper_url: null,
               authors: 'Advised by: Prof. Jie Zhang, Prof. Shiguang Shan, incollaboration with Dr. Zonghui Guo, Yingjie Liu, and Zhenwei Du.',
-              time: "March 2023 ~ Now",
+              time: "March 2023 ~ June 2024",
               image: 'figures/deepfake.png',
               others: "We collect over 60 different types of deepfakes to train a unified model for general-purpose in-the-wild deepfake detection. For the upstream, we explore self-supervised pre-training that benefits deepfake detection. For the downstream, we study how to adapt the trained model for method-specific and ID-specific detection tasks."
             });
