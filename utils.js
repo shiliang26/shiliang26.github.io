@@ -14,6 +14,11 @@ function createProjectElement(id, project){
         project.others = "";
 
     html_img = `<img src='${project.image}' style="max-width: 200px"></div></div>`
+    // Conditionally create [Paper] and [Code] links if they exist
+    let paperLink = project.paper_url ? `[<a href="${project.paper_url}">Paper</a>]` : "";
+    let codeLink = project.code_url ? `[<a href="${project.code_url}">Code</a>]` : "";
+    let links = [paperLink, codeLink].filter(Boolean).join(" ");
+    let linksSection = links ? `${links}<br><br>` : "";
     html_txt = `<p>
       <papertitle>${project.title}</papertitle>
       <br>
@@ -21,10 +26,7 @@ function createProjectElement(id, project){
       <br>
       <em>${project.conference}</em>
       <br>
-      [<a href="${project.paper_url}">Paper</a>][<a href="${project.code_url}">Code</a>]
-      <br>
-      <br>
-
+      ${linksSection}
       ${project.others}`
 
     document.getElementById(id + "-img").innerHTML = html_img;
