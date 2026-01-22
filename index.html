@@ -104,7 +104,7 @@
                 I am a second-year PhD student at <a href="https://www.northeastern.edu/">Northeastern University</a> advised by <a href="https://www1.ece.neu.edu/~yunfu/">Prof. Yun Raymond Fu</a>.
                 <br>
                 <br>
-                Previously, I was a master's student at <a href="http://vipl.ict.ac.cn/en/index.html"> Visual Information Processing and Learning (VIPL) </a> group at Institute of Computing Technology, Chinese Academy of Sciences. I worked with Prof. <a href="https://vipl.ict.ac.cn/people/_jzhang/">Jie Zhang</a> and Prof. <a href="http://vipl.ict.ac.cn/people/_sgshan/">Shiguang Shan</a>. I received my bachelor's degree in Computer Science from University of Chinese Academy of Sciences. 
+                Previously, I was a master's student at the <a href="http://vipl.ict.ac.cn/en/index.html"> VIPL </a> group at Institute of Computing Technology, Chinese Academy of Sciences. I worked with Prof. <a href="https://vipl.ict.ac.cn/people/_jzhang/">Jie Zhang</a> and Prof. <a href="http://vipl.ict.ac.cn/people/_sgshan/">Shiguang Shan</a>. I received my bachelor's degree in Computer Science from University of Chinese Academy of Sciences. 
                 <br>
                 <br>
                 My research interests lie in the field of computer vision. I am primarily focused on vision-language models, diffusion models, and face-related applications.
@@ -153,7 +153,6 @@
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
           <!-- Projects -->
-          <!--
           <tr>
             <td width="25%" id="iir-img"></td>
             <td valign="top" width="75%" id="iir-txt"></td>
@@ -162,14 +161,15 @@
             createProjectElement(
               id = "iir", {
               title: "IIR-VLM: In-Context Instance-level Recognition for Large Vision-Language Models",
-              authors: "<b> Liang Shi </b>, Wei Li, Kevin Beussman, Lin Chen, Yun Fu",
+              paper_url: "https://arxiv.org/abs/2601.14188",
+              authors: "<b> Liang Shi </b>, Wei Li, Kevin M Beussman, Lin Chen, Yun Fu",
               conference: "In submission to CVPR.",
               image: "figures/iir.png",
-              others: "We teach VLMs to recognize instances in-context."
+              others: "We teach VLMs to recognize instances in-context with specialized expert encoders."
             });
           </script>
-          -->
 
+          
           <tr>
             <td width="25%" id="expertgen-img"></td>
             <td valign="top" width="75%" id="expertgen-txt"></td>
@@ -180,7 +180,7 @@
               title: "ExpertGen: Training-Free Expert Guidance for Controllable Text-to-Face Generation",
               paper_url: "https://arxiv.org/abs/2505.17256",
               authors: "<b> Liang Shi </b>, Yun Fu",
-              conference: "In submission.",
+              conference: "In submission to CVPR.",
               image: "figures/expertgen.png",
               others: "We use off-the-shelf expert networks & consistency models to control text-to-face generation without model retraining."
             });
