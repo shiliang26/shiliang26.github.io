@@ -131,8 +131,9 @@
             <td width="60%" valign="middle">
               <heading>News</heading>
               <ul>
+                <li> <b>2026-04</b> One co-authored paper (IDEA) accepted to IEEE FG 2026. </li>
                 <li> <b>2026-02</b> One paper (<a href="https://arxiv.org/abs/2405.16895">APL</a>) accepted to IJCV. </li>
-                <li> <b>2026-01</b> One paper (<a href="https://arxiv.org/abs/2601.14188">SHIELD</a>) accepted to ICLR 2026. </li>
+                <li> <b>2026-01</b> One co-authored paper (<a href="https://arxiv.org/abs/2601.14188">SHIELD</a>) accepted to ICLR 2026. </li>
                 <li> <b>2025-05</b> Began my internship at Wyze Labs. </li>
                 <li> <b>2024-12</b> One paper (<a href="https://arxiv.org/abs/2303.08439">RFFR</a>) accepted to Pattern Recognition. </li>
                 <li> <b>2024-09</b> Began my PhD journey at Northeastern University. </li>
@@ -190,6 +191,21 @@
             });
           </script>
 
+          <tr>
+            <td width="25%" id="idea-img"></td>
+            <td valign="top" width="75%" id="idea-txt"></td>
+          </tr>
+          <script type="text/javascript">
+            createProjectElement(
+              id = "idea", {
+              title: "Capturing Individual Differences of Facial Expression for Authentic Expression Generation",
+              authors: "<b> Liang Shi </b>, Yiyang Huang, Yun Fu",
+              conference: "IEEE FG 2026.",
+              image: "figures/idea.png",
+              others: "We train a CLIP-style contrastive learning model with facial identities and expressions as input modalities. We use the model to guide T2I models for improved expression generation."
+            });
+          </script>
+
 
           <tr>
             <td width="25%" id="iir-img"></td>
@@ -201,7 +217,7 @@
               title: "IIR-VLM: In-Context Instance-level Recognition for Large Vision-Language Models",
               paper_url: "https://arxiv.org/abs/2601.14188",
               authors: "<b> Liang Shi </b>, Wei Li, Kevin M Beussman, Lin Chen, Yun Fu",
-              conference: "In submission to CVPR.",
+              conference: "In submission to ECCV.",
               image: "figures/iir.png",
               others: "We teach VLMs to recognize instances in-context with specialized expert encoders."
             });
@@ -218,29 +234,11 @@
               title: "ExpertGen: Training-Free Expert Guidance for Controllable Text-to-Face Generation",
               paper_url: "https://arxiv.org/abs/2505.17256",
               authors: "<b> Liang Shi </b>, Yun Fu",
-              conference: "In submission to CVPR.",
+              conference: "In submission to ECCV.",
               image: "figures/expertgen.png",
               others: "We use off-the-shelf expert networks & consistency models to control text-to-face generation without model retraining."
             });
           </script>
-
-          <tr>
-            <td width="25%" id="idea-img"></td>
-            <td valign="top" width="75%" id="idea-txt"></td>
-          </tr>
-          <script type="text/javascript">
-            createProjectElement(
-              id = "idea", {
-              title: "Capturing Individual Differences of Facial Expression for Authentic Expression Generation",
-              authors: "<b> Liang Shi </b>, Yiyang Huang, Yun Fu",
-              conference: "In submission.",
-              image: "figures/idea.png",
-              others: "We model what expressions are likely for each person in order to identify and mitigate unnatural face generations."
-            });
-          </script>
-
-
-
 
           <tr>
             <td width="25%" id="rffr-img"></td>
